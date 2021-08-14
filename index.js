@@ -116,7 +116,7 @@ app.delete("/user/delete/type/:usertype",async(req,res)=>
 
 
 
-app.listen(4000,() => connectTODB().then((data)=>  console.log("yes the server is now running alright")).catch((error)=>console.log(error))
+app.listen(process.env.PORT,() => connectTODB().then((data)=>  console.log("yes the server is now running alright")).catch((error)=>console.log(error))
 );
 
 
